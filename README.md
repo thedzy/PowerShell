@@ -7,7 +7,7 @@ A collection of shell, scripts, source, functions and commands to help you get s
 Like all code, don't copy and paste without understanding, always exercise caution.  With that, there is nothing intentionally malicious here. Follow the link for that. \
 See: [My one page argument for learning to code](https://github.com/thedzy/my-one-page-argument-for-learning-to-code)
 
-## [Snippets](https://github.com/thedzy/Powershell/tree/master/Snippets)
+## [Snippets](https://github.com/thedzy/Powershell/tree/master/snippets)
 Small bits of code that can be used to create or enhance some of your larger scripts
 
 ## FAQ
