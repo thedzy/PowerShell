@@ -82,6 +82,35 @@ param
 )
 
 ##########################################################################################
+# Traps
+################
+
+# Generic error trap
+trap [System.Exception] {
+    echo "ERROR"
+    echo "Message: $_"
+    
+    # Continue in spite of the error
+    #continue
+}
+
+# Generic error trap
+trap [System.TimeoutException] {
+    echo "Timeout"
+    echo "Error Message: $_"
+    Get-Member $_
+    
+    # Continue in spite of the error
+    #continue
+}
+
+##########################################################################################
+# Environment setup
+################
+
+
+
+##########################################################################################
 # Functions
 ################
 
@@ -93,7 +122,11 @@ param
 # Main
 ################
 
-
+while ($true) {
+    sleep 1
+    echo "test"
+    throw
+}
 write-host "Do something"
 
 exit
