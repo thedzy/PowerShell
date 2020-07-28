@@ -7,8 +7,18 @@ A collection of shell, scripts, source, functions and commands to help you get s
 Like all code, don't copy and paste without understanding, always exercise caution.  With that, there is nothing intentionally malicious here. Follow the link for that. \
 See: [My one page argument for learning to code](https://github.com/thedzy/my-one-page-argument-for-learning-to-code)
 
+--- 
+
+## [Scripts](https://github.com/thedzy/Powershell/tree/master/scripts)
+Bodies of code that can stand on thier own and preform some functionality
+
 ## [Snippets](https://github.com/thedzy/Powershell/tree/master/snippets)
 Small bits of code that can be used to create or enhance some of your larger scripts
+
+## [Templates](https://github.com/thedzy/Powershell/tree/master/templates)
+Small bits of code that can be used to create or enhance some of your larger scripts
+
+--- 
 
 ## FAQ
 ### Why PowerShell if I am not an expert at it?
@@ -19,3 +29,8 @@ Same as above.
 
 ### Why is there so little here?
 I am getting there?
+
+
+
+
+
