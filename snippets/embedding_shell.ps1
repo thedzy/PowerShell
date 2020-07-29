@@ -29,7 +29,7 @@ $code -replace "`r", "`n"  | wsl --exec
 Write-Host $("-" * 40)
 
 
-# Embedding PowerShell vaiables into bash code
+# Embedding bash vaiables into bash code
 @"
 printf `"$msg`" Bash
 
@@ -48,7 +48,7 @@ $code | wsl --exec
 Write-Host $("-" * 40)
 
 
-# Captuing the output of Python
+# Captuing the output of bash
 $platform = (@'
 printf "$BASH_VERSION\n"
 '@ | wsl --exec) | Out-String
