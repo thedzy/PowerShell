@@ -1,6 +1,6 @@
 
-write-host "Open in defualt browser"
+Write-Host "Open in defualt browser"
 Start-Process https://google.com
 
-write-host "Open in Edge"
+Write-Host "Open in Edge"
 Start-Process microsoft-edge:https://www.google.com

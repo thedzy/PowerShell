@@ -66,11 +66,11 @@ param (
 	[switch] $help = $false,
 
 	# Require fileds and data validation
-	[Parameter(Mandatory, HelpMessage="Push or Pull")][ValidateSet('Push', 'Pull')][string] $action,
+	[Parameter(Mandatory, HelpMessage = "Push or Pull")][ValidateSet('Push', 'Pull')][string] $action,
 	# Prompt for the username, same as using "Mandatory", alias parameter
 	[Alias('user')][string] $username = $( Read-Host "Username" ),
 	# Prompt for the password securely, alias parameter
-	[Alias('pass')][string] $password = $( Read-Host -asSecureString "NOT an actual password" ),
+	[Alias('pass')][string] $password = $( Read-Host -AsSecureString "NOT an actual password" ),
 
 	# Positional argument
 	[Parameter(Mandatory = $false, Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true)][string] $path
@@ -96,24 +96,24 @@ if ($help) {
 # Main
 ################
 
-write-host 
-write-host '$char      :' $char
-write-host '$string    :' $string
+Write-Host 
+Write-Host '$char      :' $char
+Write-Host '$string    :' $string
 
-write-host '$bool      :' $bool
+Write-Host '$bool      :' $bool
 
-write-host '$integer   :' $integer
-write-host '$decimal   :' $decimal
+Write-Host '$integer   :' $integer
+Write-Host '$decimal   :' $decimal
 
-write-host '$date      :' $date
+Write-Host '$date      :' $date
 
-write-host '$xml       :' $xml
-write-host '$array     :' $array
+Write-Host '$xml       :' $xml
+Write-Host '$array     :' $array
 
-write-host 'Action     :' $action
-write-host 'Username   :' $username
-write-host 'Password   : *********'
+Write-Host 'Action     :' $action
+Write-Host 'Username   :' $username
+Write-Host 'Password   : *********'
 
-write-host 'Position 1 : ' $path
+Write-Host 'Position 1 : ' $path
 
 exit

@@ -1,2 +1,2 @@
 
-Write-Host  $("-" * (Get-Host).UI.RawUI.MaxWindowSize.Width)
+Write-Host $("-" * (Get-Host).UI.RawUI.MaxWindowSize.Width)

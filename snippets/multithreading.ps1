@@ -42,9 +42,3 @@ Write-Host "Done!"
 "Overhead                  : {0,5} seconds " -f $time_overhead
 
 exit 0
-
-
-
-
-
-

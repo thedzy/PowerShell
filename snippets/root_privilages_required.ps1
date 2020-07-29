@@ -6,7 +6,7 @@ $admin_status = $currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::A
 
 # If not and admin, elevate
 if ( -not  $admin_status ) {
-    write-host "Signing into admin"
+    Write-Host "Signing into admin"
     Start-Process powershell.exe -Verb RunAs -ArgumentList ('-noprofile -noexit -file "{0}" -elevated' -f ($MyInvocation.MyCommand.Definition))
     exit $LASTEXITCODE
 }

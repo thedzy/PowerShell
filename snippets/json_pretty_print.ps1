@@ -4,5 +4,7 @@ $jsondata = '{"object":{"users":[{"name":"JohnDoe","username":"jdoe","expires_ut
 Write-Host $jsondata
 
 Write-Host "`nAfter:"
-$jsondata | ConvertFrom-Json | ConvertTo-Json -depth 100
+$jsondata | ConvertFrom-Json | ConvertTo-Json -Depth 100
+
+
 

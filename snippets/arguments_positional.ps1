@@ -31,15 +31,15 @@ param (
 	[Parameter(Position = 2)][ValidateRange(0, 50)][int] $integer = 50,
 
 	# Action, pull or push
-	[Parameter(Mandatory, Position = 3, HelpMessage="Push or Pull")][ValidateSet('Push', 'Pull')][string] $action,
+	[Parameter(Mandatory, Position = 3, HelpMessage = "Push or Pull")][ValidateSet('Push', 'Pull')][string] $action,
 	# Username
 	[Parameter(Position = 4)][Alias('user')][string] $username = $( Read-Host "Username" ),
 	# Password
-	[Parameter(Position = 5)][Alias('pass')][string] $password = $( Read-Host -asSecureString "NOT an actual password" )
+	[Parameter(Position = 5)][Alias('pass')][string] $password = $( Read-Host -AsSecureString "NOT an actual password" )
 )
 
 # Additional feild validation, (other than data types, done by "param")
-write-host $path
+Write-Host $path
 if (!( Test-Path $path)) {
 	Write-Host "Posional parameter 1 must be a valid path"
 	exit
@@ -49,15 +49,16 @@ if (!( Test-Path $path)) {
 # Main
 ################
 
-write-host 
-write-host '$char      :' $char
+Write-Host 
+Write-Host '$char      :' $char
 
-write-host '$integer   :' $integer
+Write-Host '$integer   :' $integer
 
-write-host 'Action     :' $action
-write-host 'Username   :' $username
-write-host 'Password   : *********'
+Write-Host 'Action     :' $action
+Write-Host 'Username   :' $username
+Write-Host 'Password   : *********'
 
-write-host 'Position 1 : ' $path
+Write-Host 'Position 1 : ' $path
 
 exit
+

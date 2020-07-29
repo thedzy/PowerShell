@@ -2,11 +2,11 @@
 # Visible input
 $username = ( Read-Host "Username" )
 # Masked inout
-$password = ( Read-Host -asSecureString "Password" )
-write-host "`n$username : ********"
+$password = ( Read-Host -AsSecureString "Password" )
+Write-Host "`n$username : ********"
 
 # Single key input
-write-host -NoNewLine "Press any key "
+Write-Host -NoNewline "Press any key "
 $key = ($Host.UI.RawUI.ReadKey())
 Write-Host "`nKey : " $key.Character
 
