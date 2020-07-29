@@ -98,10 +98,6 @@ trap [System.Exception] {
 trap [System.TimeoutException] {
     echo "Timeout"
     echo "Error Message: $_"
-    Get-Member $_
-    
-    # Continue in spite of the error
-    #continue
 }
 
 ##########################################################################################
