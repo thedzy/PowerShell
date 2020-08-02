@@ -1,5 +1,5 @@
 
-$log_file = "$env:TEMP/loffile.log"
+$log_file = "$env:TEMP/log_file.log"
 Clear-Content $log_file
 
 Write-Output "Start Stricpt with no redirection"
