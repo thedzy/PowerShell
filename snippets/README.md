@@ -4,9 +4,9 @@ Snippets of code for larger bodies of code
 ## [accessing_regisry.ps1](https://github.com/thedzy/Powershell/blob/master/Snippets/accessing_regisry.ps1)
 Read and find data in the ioreg (I/O Kit registry)
 ## [arguments_named.ps1](https://github.com/thedzy/Powershell/blob/master/Snippets/arguments_named.ps1)
-Getting positional arguments supplied after the command/file with single character arguments (-h)
+Getting positional arguments supplied after the command/file (--help/Get-Help)
 ## [arguments_named_alt.ps1](https://github.com/thedzy/Powershell/blob/master/Snippets/arguments_named_alt.ps1)
-Getting positional arguments supplied after the command/file with full names (--help)
+Getting positional arguments supplied after the command/file (--help/Get-Help)
 ## [arguments_positional.ps1](https://github.com/thedzy/Powershell/blob/master/Snippets/arguments_positional.ps1)
 Getting positional arguments supplied after the command/file
 ## [arguments_positional_alt.ps1](https://github.com/thedzy/Powershell/blob/master/Snippets/arguments_positional_alt.ps1)
@@ -38,7 +38,7 @@ Print out all variables that the script can access.  Created by the system or us
 ## [randoms.ps1](https://github.com/thedzy/Powershell/blob/master/Snippets/randoms.ps1)
 Create random variables of text, numbers, hex, Base64, files and installers
 ## [recursive_loops.ps1](https://github.com/thedzy/Powershell/blob/master/Snippets/recursive_loops.ps1)
-Examples of recurive loops in the bourne sh](https://github.com/thedzy/Powershell/blob/master/Snippets/.ps1)ell
+Examples of recurive loops
 ## [redirecting_screen_to_file.ps1](https://github.com/thedzy/Powershell/blob/master/Snippets/redirecting_screen_to_file.ps1)
 Redirect all screen output to a file a redirect back at the end
 ## [redirecting_screen_to_log.ps1](https://github.com/thedzy/Powershell/blob/master/Snippets/redirecting_screen_to_log.ps1)
