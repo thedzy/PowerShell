@@ -30,7 +30,6 @@ Same as above.
 ### Why is there so little here?
 I am getting there?
 
-
-
-
+### Is see a mistake/imporovement.  How to fix it?
+Feel free to contribute or file a bug request.
 
