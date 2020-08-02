@@ -38,7 +38,7 @@ trap [System.Exception] {
 # Examples
 ###########################
 
-echo "Starting"
+Write-Output "Starting"
 
 # Intercept aritmic error, divide ny zero
 Write-Host "Dividing by zero"
@@ -47,7 +47,7 @@ trap [System.DivideByZeroException] {
 	Write-Warning $_.Exception.GetType().FullName
 	continue
 }
-$math = 10 / 0
+10 / 0
 
 # Generic error trap
 Write-Host "Opening a file"
@@ -59,7 +59,7 @@ trap [System.Exception] {
 	# Do not want to continue on an error
 	exit
 }
-Get-Content c:/path/doesnt/exist.txt  -ErrorAction Stop
+Get-Content c:/path/doesnt/exist.txt -ErrorAction Stop
 
-echo "Exiting"
+Write-Output "Exiting"
 exit
